@@ -24,8 +24,8 @@ app = FastAPI(
 # 2. LOAD THE TRAINED MODEL
 # ==========================================
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "notebooks" / "iris_model.pkl"
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "models" / "iris_model.pkl"
 
 if not MODEL_PATH.exists():
     raise FileNotFoundError(
